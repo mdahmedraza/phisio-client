@@ -1,0 +1,172 @@
+.page {
+  padding: 110px 20px 40px; /* leave room for your fixed header */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 110px);
+  background: linear-gradient(180deg, #f7fbff 0%, #fff 100%);
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 980px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(10, 25, 47, 0.06);
+  padding: 26px;
+  border: 1px solid rgba(2,6,23,0.04);
+}
+
+/* Header */
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #02263b;
+  letter-spacing: -0.2px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #415165;
+  font-size: 14px;
+}
+
+/* Form layout */
+.form {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* row — two columns on desktop */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.rowInline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* full width field */
+.fieldFull {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+
+/* each labeled field */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* labels and inputs */
+.field span {
+  font-size: 13px;
+  color: #213446;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(2,6,23,0.08);
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  color: #071233;
+  transition: box-shadow 0.15s ease, transform 0.12s ease;
+  box-shadow: 0 1px 0 rgba(2,6,23,0.02);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 6px 18px rgba(0, 119, 182, 0.12);
+  border-color: #0077b6;
+}
+
+/* inline checkbox */
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: #213446;
+}
+
+/* textarea */
+textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+/* error text */
+.error {
+  color: #b91c1c;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+/* actions */
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+  align-items: center;
+}
+
+.submitBtn {
+  background: #0077b6;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 26px rgba(0,119,182,0.14);
+  transition: transform 0.12s ease;
+}
+
+.submitBtn:active {
+  transform: translateY(1px);
+}
+
+.clearBtn {
+  background: transparent;
+  color: #0f172a;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(2,6,23,0.06);
+  cursor: pointer;
+}
+
+/* help text */
+.help {
+  margin-top: 18px;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .page {
+    padding-top: 96px;
+  }
+}
