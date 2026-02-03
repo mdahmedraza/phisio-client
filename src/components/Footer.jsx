@@ -30,9 +30,9 @@ const Footer = () => {
           </p>
 
           <div className={styles.socials}>
-            <a href="#" aria-label="Facebook" className={styles.social}>FB</a>
-            <a href="#" aria-label="Instagram" className={styles.social}>IG</a>
-            <a href="#" aria-label="LinkedIn" className={styles.social}>LI</a>
+            <a href="/privacy" aria-label="Facebook" className={styles.social}>FB</a>
+            <a href="/privacy" aria-label="Instagram" className={styles.social}>IG</a>
+            <a href="/privacy" aria-label="LinkedIn" className={styles.social}>LI</a>
             <a href="https://wa.me/919876543210" aria-label="WhatsApp" className={styles.social}>WA</a>
           </div>
         </div>
